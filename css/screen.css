@@ -48,6 +48,13 @@ html {
   /* padding: 48px 24px 24px; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /*
@@ -294,6 +301,15 @@ h3 {
   font-size: 16px;
   line-height: 16px;
 }
+@media (min-width: 992px) {
+  .c-author {
+    display: block;
+  }
+  .c-author__avatar {
+    margin-bottom: 16px;
+  }
+}
+
 /* 
 components: article
  */
@@ -304,8 +320,9 @@ components: article
   padding: 24px 24px 0;
 }
 .c-article__body {
-  padding: o 24px;
+  padding: 0 24px;
 }
+
 @media (min-width: 768px) {
   .c-article__header {
     padding: 48px 48px 24px;
@@ -329,4 +346,7 @@ components: article
   .c-article__content {
     width: 75%;
   }
+}
+.u-max-width-sm {
+  max-width: 36em;
 }
