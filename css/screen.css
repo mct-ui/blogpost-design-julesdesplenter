@@ -104,7 +104,9 @@ h2 {
   line-height: 32px;
   margin: 0 0 24px;
 }
-
+* + h2 {
+  margin-top: 48px;
+}
 h3 {
   font-size: 18px;
   line-height: 24px;
@@ -226,51 +228,77 @@ a:focus {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: ' (' attr(href) ')';
-  }
-  abbr[title]:after {
-    content: ' (' attr(title) ')';
-  }
-  /*
+}
+a,
+a:visited {
+  text-decoration: underline;
+}
+a[href]:after {
+  content: ' (' attr(href) ')';
+}
+abbr[title]:after {
+  content: ' (' attr(title) ')';
+}
+/*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^='#']:after,
-  a[href^='javascript:']:after {
-    content: '';
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
+a[href^='#']:after,
+a[href^='javascript:']:after {
+  content: '';
+}
+pre {
+  white-space: pre-wrap !important;
+}
+pre,
+blockquote {
+  border: 1px solid #999;
+  page-break-inside: avoid;
+}
+/*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+thead {
+  display: table-header-group;
+}
+tr,
+img {
+  page-break-inside: avoid;
+}
+p,
+h2,
+h3 {
+  orphans: 3;
+  widows: 3;
+}
+h2,
+h3 {
+  page-break-after: avoid;
+}
+
+.c-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.c-author__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+.c-author__name,
+.c-author__meta {
+  margin-bottom: 0;
+}
+.c-author__meta {
+  font-size: 14px;
+  font-family: 'Inter UI', 'Helvetica Neue', Helvetica, arial, sans-serif;
+  line-height: 16px;
+  margin-top: 4px;
+}
+.c-author__name {
+  font-size: 16px;
+  line-height: 16px;
 }
