@@ -43,7 +43,7 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Droid Serif", Georgia, Serif;
+  font-family: 'Droid Serif', Georgia, Serif;
   color: #5c6366;
   padding: 48px 24px 24px;
 }
@@ -87,13 +87,14 @@ h1,
 h2,
 h3 {
   color: #17181a;
+  font-family: 'Inter UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1 {
   font-size: 36px;
-  font-weight: normal;
   line-height: 40px;
   margin: 0 0 24px;
+  font-family: 'Playfair Display', serif;
 }
 
 h2 {
