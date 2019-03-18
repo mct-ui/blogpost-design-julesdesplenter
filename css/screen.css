@@ -350,3 +350,20 @@ components: article
 .u-max-width-sm {
   max-width: 36em;
 }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+.c-article__blockquote {
+  padding: 24px 24px 24px 24px;
+  background: #f2faf8;
+  color: #00b37d;
+  margin: 16px 0 16px;
+  font-size: 23px;
+}
